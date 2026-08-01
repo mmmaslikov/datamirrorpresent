@@ -475,25 +475,25 @@
           </div>
           
           <!-- Ссылка и QR-код в одной строке -->
-          <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 16px; flex-wrap: wrap;">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 16px;">
             
-            <!-- Ссылка -->
-            <div style="background: rgba(0,0,0,0.3); padding: 8px 12px; border-radius: 8px; font-family: monospace; font-size: 11px; color: #fbbf24; flex: 1; min-width: 200px; word-break: break-all;">
+            <!-- Ссылка (компактная) -->
+            <div style="background: rgba(0,0,0,0.3); padding: 10px 14px; border-radius: 8px; font-family: monospace; font-size: 11px; color: #fbbf24; flex: 1; text-align: left; word-break: break-all;">
               mmmaslikov.github.io/datamirror
             </div>
             
-            <!-- QR-код компактный -->
-            <div style="background: white; border-radius: 8px; padding: 6px; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
-              <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://mmmaslikov.github.io/datamirror" 
-                   alt="QR-код" 
-                   style="width: 80px; height: 80px; display: block; border-radius: 4px;">
+            <!-- QR-код с подписью -->
+            <div style="flex-shrink: 0; text-align: center;">
+              <div style="background: white; border-radius: 8px; padding: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://mmmaslikov.github.io/datamirror" 
+                     alt="QR-код" 
+                     style="width: 80px; height: 80px; display: block; border-radius: 4px;">
+              </div>
+              <div style="font-size: 9px; color: rgba(255,255,255,0.8); margin-top: 4px; font-weight: 600;">
+                 Наведите камеру
+              </div>
             </div>
             
-          </div>
-          
-          <!-- Подпись под QR -->
-          <div style="font-size: 9px; color: rgba(255,255,255,0.7); margin-bottom: 12px; font-weight: 600; letter-spacing: 0.5px;">
-            📱 Наведите камеру для быстрого доступа
           </div>
           
           <!-- Список -->
